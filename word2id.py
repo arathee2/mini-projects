@@ -1,6 +1,6 @@
-sentence = "Parameters of the estimators in the pipeline can be accessed using the"
+sentence = "Rules and models destroy genius and art."
 sentence = sentence.split(" ")
-sentence
+print(sentence)
 
 def word2id(words):
     '''create a word to id mapping of the given string'''
@@ -21,8 +21,8 @@ def word2id(words):
 
 word2id = word2id(string)
 word2id = sorted(word2id.items(), key=lambda item: item[1], reverse=False)
-word2id
+print(word2id)
 
 # reverse mapping: store id as key and word as value
 id2word = {value: key for key, value in word2id.items()}
-id2word
+print(id2word)
